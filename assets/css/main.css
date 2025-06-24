@@ -3234,13 +3234,19 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg_mobile.jpg");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
 			background-attachment: scroll,								scroll,														scroll;
 			z-index: -1;
 		}
+	
+	@media (max-width: 1000px) {
+		#wrapper {
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg_mobile.jpg");
+		}
+	}
 
 			#wrapper > .bg.fixed {
 				position: fixed;
@@ -3470,18 +3476,23 @@ input, select, textarea {
 
 			#intro {
 				padding: 3rem 2rem 1rem 2rem ;
-				min-height: 80vh;
+				min-height: 64vh;
+				display: flex;
+				justify-content: flex-start;
+				margin-top: 26px;
 			}
 
 				#intro h1 {
 					font-size: 3.25rem;
 					line-height: 1.1;
 					margin-bottom: 1rem;
+					color: black;
 				}
 
 				#intro p {
 					font-size: 1rem;
 					margin-top: 0rem;
+					color: black;
 				}
 
 				#intro .actions {
@@ -4547,6 +4558,7 @@ input, select, textarea {
 			#navPanelToggle {
 				font-size: 0.8rem;
 				padding: 0.25rem 1rem;
+				color: black;
 			}
 
 		}
