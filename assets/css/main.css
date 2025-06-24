@@ -37,6 +37,46 @@ ol, ul {
 	list-style: none;
 }
 
+#press_socials {
+	display: flex;
+}
+
+#music_player {
+	margin: 0 130px !important;
+}
+#press_container {
+	display: flex;
+	margin: 0 130px !important;
+	padding-top: 24px !important;
+}
+
+#bio_text {
+	font-size: 14px;
+    line-height: 24px;
+}
+
+#press_images ul {
+	list-style-type:none;
+	margin-right: 45px;
+	padding-left: 0 !important;
+}
+#press_images li {
+	list-style-type:none;
+	padding-left: 0 !important;
+}
+#press_images li img {
+	width: 450px;
+}
+#press_images li a {
+	color: blue;
+	display: block;    
+	line-height: normal;
+    margin-top: -20px;
+    font-size: 12px;
+    font-weight: 600;
+    margin-bottom: 24px;
+}
+
 blockquote, q {
 	quotes: none;
 }
