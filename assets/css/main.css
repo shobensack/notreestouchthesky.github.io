@@ -86,6 +86,9 @@ ol, ul {
 #press_nav {
 	display: none;
 }
+#press_bios {
+	display: none;
+}
 @media screen and (max-width: 980px) {
 	#press_nav {        
 		display: flex;
@@ -126,6 +129,9 @@ ol, ul {
 		margin-top: -10px;
 		font-size: 16px;
 		font-weight: 600;
+	}
+	#press_bios {
+		display: block;
 	}
 }
 
