@@ -3234,7 +3234,7 @@ input, select, textarea {
 			width: 100%;
 			height: 100%;
 			background-color: #212931;
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg_mobile.jpg");
+			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg.jpg");
 			background-size: auto,								auto,														100% auto;
 			background-position: center,								center,														top center;
 			background-repeat: repeat,								no-repeat,													no-repeat;
@@ -3242,11 +3242,6 @@ input, select, textarea {
 			z-index: -1;
 		}
 	
-	@media (max-width: 1000px) {
-		#wrapper {
-			background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)), url("../../images/bg_mobile.jpg");
-		}
-	}
 
 			#wrapper > .bg.fixed {
 				position: fixed;
@@ -3481,6 +3476,9 @@ input, select, textarea {
 				justify-content: flex-start;
 				margin-top: 26px;
 			}
+				#wrapper > .bg  {
+					background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("../../images/bg_mobile.jpg");
+				}
 
 				#intro h1 {
 					font-size: 3.25rem;

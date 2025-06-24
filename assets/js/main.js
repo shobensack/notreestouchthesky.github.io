@@ -5,6 +5,9 @@
 */
 
 (function($) {
+	window.onbeforeunload = function () {
+	  window.scrollTo(0, 0);
+	}
 
 	var	$window = $(window),
 		$body = $('body'),
