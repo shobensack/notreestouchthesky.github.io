@@ -3311,7 +3311,7 @@ input, select, textarea {
 		cursor: default;
 		text-align: center;
 		z-index: 1;
-		min-height: 100vh;
+		min-height: 80vh;
 	}
 
 		#intro input, #intro select, #intro textarea {
@@ -3462,7 +3462,7 @@ input, select, textarea {
 				}
 
 				#intro + #header {
-					margin-top: -14rem;
+					margin-top: -21rem;
 				}
 
 		}
@@ -3477,7 +3477,10 @@ input, select, textarea {
 				margin-top: 26px;
 			}
 				#wrapper > .bg  {
-					background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(255, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("../../images/bg_mobile.jpg");
+					top: -100px;
+					background-image: url("../../images/overlay.png"), linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.1)), url("../../images/bg_mobile.jpg");
+					max-height: 85vh;
+					overflow: hidden;
 				}
 
 				#intro h1 {
@@ -3973,11 +3976,11 @@ input, select, textarea {
 	}
 
 		#footer input, #footer select, #footer textarea {
-			color: #717981;
+			color: #000;
 		}
 
 		#footer a {
-			color: #717981;
+			color: #000;
 			border-bottom-color: rgba(113, 121, 129, 0.5);
 		}
 
@@ -4252,6 +4255,14 @@ input, select, textarea {
 					align-items: center;
 					padding: 3.15rem 4rem;
 				}
+				
+				#footer > section.split.contact > section > :last-child {
+				    display: flex;
+					gap: 24px;
+					row-gap: 24px;
+					column-gap: 24px;
+					justify-content: center;
+				}
 
 					#footer > section.split.contact > section > * {
 						margin-bottom: 0;
@@ -4394,7 +4405,6 @@ input, select, textarea {
 	#copyright {
 		color: #ffffff;
 		position: relative;
-		color: rgba(255, 255, 255, 0.25);
 		cursor: default;
 		font-family: "Source Sans Pro", Helvetica, sans-serif;
 		font-size: 0.8rem;
