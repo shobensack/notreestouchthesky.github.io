@@ -3568,7 +3568,7 @@ input, select, textarea {
 
 			#intro {
 				padding: 3rem 2rem 1rem 2rem ;
-				min-height: 65vh;
+				min-height: 60vh;
 				display: flex;
 				justify-content: flex-start;
 				margin-top: 60px;
