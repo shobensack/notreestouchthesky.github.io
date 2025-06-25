@@ -42,7 +42,7 @@
 						<div id="music_player">
 							<h2>Listen</h2>
 							
-							<a style="color: blue; font-size:24px;display:block;margin-bottom:12px;line-height:normal;" href="https://on.soundcloud.com/ryv9TGiDWTdaGwgT9" target="_blank">
+							<a id="music_link" style="color: blue; font-size:24px;display:block;margin-bottom:12px;line-height:normal;    border-bottom: none;" href="https://on.soundcloud.com/ryv9TGiDWTdaGwgT9" target="_blank">
 								Click here for Unreleased Music
 							</a>
 							
@@ -50,7 +50,7 @@
 						</div>
 					
 						<!-- Featured Post -->
-							<h2 class="press_heading" id="images">Press Material</h2>
+							<h2 class="press_heading" id="images" style="border-top: none;">Press Material</h2>
 							<article id="press_container">
 								<div id="press_images">
 									<ul>
@@ -87,7 +87,7 @@
 									
 									<div id="extended_bio">
 										<h4>Extended Biography</h4>
-										<p id="bio_text">No Trees Touch the Sky emerged from the vibrant Philadelphia music scene in late 2023, born from the remnants of a previous project involving four of its five members. The addition of bassist Justin completed the lineup, solidifying their new direction. Their name, inspired by a desire to encapsulate the essence of their genre and perhaps a serendipitous fortune cookie message, reflects their ambition and the atmospheric quality of their music.<br/><br/>
+										<p id="bio_text">No Trees Touch the Sky emerged from the vibrant Philadelphia music scene in late 2023, born from the remnants of a previous project involving four of its five members. Their name, inspired by a desire to encapsulate the essence of their genre and perhaps a serendipitous fortune cookie message, reflects their ambition and the atmospheric quality of their music.<br/><br/>
 
 Drawing inspiration from the late '90s to mid-2010s post-hardcore era, the band infuses their sound with ambient textures and indie sensibilities. Their songwriting process is collaborative, often starting with a riff or melody and evolving through collective input, ensuring each track embodies the essence of the entire group.<br/><br/>
 
@@ -131,6 +131,22 @@ Active on platforms like Instagram, TikTok, and Bandcamp, No Trees Touch the Sky
 			<script src="assets/js/breakpoints.min.js"></script>
 			<script src="assets/js/util.js"></script>
 			<script src="assets/js/main.js"></script>
+			
+			<script>
+				const epkParam = new URLSearchParams(window.location.search);
+				const myParam = epkParam.get('epkLink');
+				if (!myParam && myParam == null) {
+					$('#header .logo').text('Press')
+					
+					$('#short_bio').remove();
+					$('#extended_bio h4').remove();
+					$('#music_link').remove()
+					$('#music_player').remove();
+					$('#images').text('Biography');
+					$('#press_container').css({'padding-top:': ' 80px !important'});
+					$('#press_images').find('a').remove()
+				}
+			</script>
 
 	</body>
 </html>
