@@ -133,6 +133,8 @@ Active on platforms like Instagram, TikTok, and Bandcamp, No Trees Touch the Sky
 			<script src="assets/js/main.js"></script>
 			
 			<script>
+				$('#navPanelToggle').addClass('alt');
+				
 				const epkParam = new URLSearchParams(window.location.search);
 				const myParam = epkParam.get('epkLink');
 				if (!myParam && myParam == null) {
@@ -145,6 +147,8 @@ Active on platforms like Instagram, TikTok, and Bandcamp, No Trees Touch the Sky
 					$('#images').text('Biography');
 					$('#press_container').css({'padding-top:': ' 80px !important'});
 					$('#press_images').find('a').remove()
+					$('#press_nav').remove()
+					$('#press_bios').text('Biography')
 				}
 			</script>
 
