@@ -184,6 +184,10 @@ ol, ul {
 }
 
 
+	
+	#socials_list b {
+		display: block;
+	}
 
 #more_info {
 	
@@ -310,6 +314,10 @@ ol, ul {
 		align-items: center;
 		height: 35px;
 		text-align: center;
+	}
+	
+	#socials_list b {
+		display: block;
 	}
 
 	.spotify_icon:before {
