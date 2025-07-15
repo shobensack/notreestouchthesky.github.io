@@ -76,7 +76,7 @@ ol, ul {
     line-height: normal;
 	padding: 0 12px;
 	font-family: Arial, Helvetica, sans-serif;
-	height: 100vh;
+	    padding-bottom: 32px;
 }
 
 .epk_left {
@@ -181,8 +181,26 @@ ol, ul {
 
 
 
+#more_info {
+	
+	background-color: #F6F6F6;
+	font-size: 13px;
+    line-height: normal;
+	padding: 0 12px;
+	font-family: Arial, Helvetica, sans-serif;
+}
 
+#more_info h3 {
+	padding-top: 36px;
+    display: block;
+	font-family: Arial, Helvetica, sans-serif;
+	border-top: 1px solid grey;
+}
 
+#more_info p {
+	font-family: Arial, Helvetica, sans-serif;
+	text-align: justify;
+}
 
 
 
