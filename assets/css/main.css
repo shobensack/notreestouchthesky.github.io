@@ -153,6 +153,7 @@ ol, ul {
 	justify-content: flex-start;
     align-items: center;
 	height: 35px;
+	text-align: center;
 }
 
 .spotify_icon:before {
@@ -308,6 +309,7 @@ ol, ul {
 		justify-content: space-between;
 		align-items: center;
 		height: 35px;
+		text-align: center;
 	}
 
 	.spotify_icon:before {
