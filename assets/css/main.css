@@ -113,6 +113,7 @@ ol, ul {
 
 #popular_tracks li {
 	margin-bottom: 8px;
+	padding-left: 0;
 }
 
 .epk_right {
@@ -289,7 +290,7 @@ ol, ul {
 		display: flex;
 		flex-direction: column;
 		position: relative;
-		margin-bottom: 14px;
+		margin-bottom: 8px;
 	}
 
 	.mobile_sideways_title {
