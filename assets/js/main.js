@@ -28,6 +28,16 @@
 			xxsmall:   [null,       '360px'    ]
 		});
 
+		
+
+	// copy text to clipboard
+	$('.copy_text_link .copy_link').on('click', function (e) {
+		if (e) {
+			e.preventDefault();
+		}
+		copyText($(this).closest('.copy_text_link').text().replace('Copy to clipboard', ''))
+	});
+
 	/**
 	 * Applies parallax scrolling to an element's background image.
 	 * @return {jQuery} jQuery object.
@@ -112,6 +122,15 @@
 		return $(this);
 
 	};
+
+	async function copyText(text) {
+	try {
+		await navigator.clipboard.writeText(text);
+		console.log('Text copied to clipboard');
+	} catch (err) {
+		console.error('Failed to copy: ', err);
+	}
+	}
 
 	// Play initial animations on page load.
 		$window.on('load', function() {
